@@ -38,20 +38,20 @@
                 <div class="form-group">
                     <div class="member-count-field">
                         <p class="member-count">인원수</p>
-                        <input type="number" min="0" class="form-input member-count-input">
+                        <input type="number" min="0" class="form-input member-count-input" required>
                     </div>
                     <div class="group-name-field">
                         <p class="group-name">모임 이름</p>
-                        <input type="text" class="form-input group-name-input">
+                        <input type="text" class="form-input group-name-input" required>
                     </div>
                 </div>
                 <div class="date-time-field">
                     <p class="date-time">모임 일시</p>
                     <div class="date-time-input-group">
                         <div class="calender-icon"></div>
-                        <input type="date" class="form-input date-input">
+                        <input type="date" class="form-input date-input" required>
                         <div class="clock-icon"></div>
-                        <input type="time" class="form-input time-input">
+                        <input type="time" class="form-input time-input" required>
                 </div>
             </div>
             <div class="main-bottom">
@@ -126,12 +126,32 @@
                             </label>
                         </div>
                     </div>
-                    <div class="group-create-btn">
+                    <div class="group-create-btn" id="groupCreateBtn">
                         <p class="group-create-text">그룹 만들기</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+    const groupCreateBtn = document.getElementById("groupCreateBtn");
+
+    groupCreateBtn.addEventListener("click", function () {
+        const memberCount = document.querySelector(".member-count-input").value.trim();
+        const groupName = document.querySelector(".group-name-input").value.trim();
+        const date = document.querySelector(".date-input").value;
+        const time = document.querySelector(".time-input").value;
+        const checkedCategory = document.querySelectorAll(".checkbox-input:checked");
+
+        if (!memberCount || !groupName || !date || !time || checkedCategory.length === 0) {
+            alert("모임 정보를 모두 입력해주세요!");
+            return;
+        }
+
+        window.location.href = "../YESPOT!/thirdpage.html";
+    });
+    </script>
+
 </body>
 </html>
