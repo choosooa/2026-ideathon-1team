@@ -13,8 +13,7 @@ a {
     padding: 40px;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    zoom: 0.9;
+    gap: 40px;
 }
 .header{
     display: flex;
@@ -37,13 +36,12 @@ a {
     color: var(--BUTTON, #F44671);
     text-align: center;
 
-    /* project/name3 */
+    /* project/name2 */
     font-family: Pretendard;
-    font-size: 43px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 800;
-    line-height: 60px; /* 139.535% */
-    letter-spacing: 2.15px;
+    line-height: 60px; /* 150% */
 }
 .miniheader{
     display: flex;
@@ -86,10 +84,10 @@ a {
 
     /* project/subtext */
     font-family: Pretendard;
-    font-size: 27px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 60px; /* 222.222% */
+    line-height: 60px; /* 250% */
 }
 
 .group{
@@ -98,32 +96,32 @@ a {
 
     /* project/subtext */
     font-family: Pretendard;
-    font-size: 27px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 60px; /* 222.222% */
+    line-height: 60px; /* 250% */
 }
 
 .header-r{
     display: flex;
-    width: 266px;
+    width: 236px;
     align-items: center;
     gap: 40px;
 }
 .bell{
-    height: 60px;
+    height: 45px;
     flex: 1 0 0;
     aspect-ratio: 1/1;
 }
 .login{
     display: flex;
-    width: 166px;
+    width: 151px;
     align-items: center;
-    gap: 14px;
+    gap: 17px;
     flex-shrink: 0;
 }
 .people{
-    height: 50px;
+    height: 40px;
     flex: 1 0 0;
     aspect-ratio: 1/1;
 }
@@ -132,19 +130,17 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 6px;
-    
 }
 .login-text{
     color: var(--SUB1, #505050);
     text-align: center;
-    width: 75px;
 
     /* project/subtext */
     font-family: Pretendard;
-    font-size: 27px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 60px; /* 222.222% */
+    line-height: 60px; /* 250% */
 }
 .chevron{
     width: 25px;
